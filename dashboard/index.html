@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+</head>
+<body>
+
+<header>
+    <div class="info-header">
+        <div class="logo">
+            <h3>Painel</h3>
+        </div>
+        <div class="icons-header">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div style="align-items: center;" class="info-header">
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-solid fa-bell"></i>
+        <img src="images.png">
+    </div>
+</header>
+
+<!--Fim Header-->
+
+<section class="main">
+    <div class="sidebar">
+        <h3>Home</h3>
+        <a class="sidebar-active" href="#"><i class="fa-solid fa-house"></i> Relatorios</a>
+        <a href="#"><i class="fa-solid fa-house"></i> Relatorios</a>
+        <a href="#"><i class="fa-solid fa-house"></i> Relatorios</a>
+        <a href="#"><i class="fa-solid fa-house"></i> Relatorios</a>
+        <br>
+        <hr>
+    </div><!--Sidebar-->
+    <div class="content">
+        <div class="titulo-secao">
+            <h2>Dashboard</h2>
+            <br/>
+            <hr>
+            <p><i class="fa-solid fa-house"></i> / Dashboard</p>
+            <br/>
+        </div>
+
+        <div class="box-info">
+
+            <div style="background:linear-gradient(45deg, #4099ff, #73b4ff)" class="box-info-single">
+                <div id="card-receitas" class="info-text">
+                  <h3>Total Receitas</h3>
+                  <p>R$1.0000</p>
+                </div>  
+              <i class="fa-solid fa-money-bill"></i>
+            </div>
+
+            <div style="background:linear-gradient(45deg, #ff5370, #ff869a)" class="box-info-single">
+              <div id="card-despesas" class="info-text">
+                <h3>Total Despesas</h3>
+                <p>R$1.0000</p>
+              </div>  
+            <i class="fa-solid fa-money-bill"></i>
+            </div>
+            
+              <div style="background:linear-gradient(45deg, #2ed8b6, #59e0c5)" class="box-info-single">
+                <div id="card-saldo" class="info-text">
+                  <h3>Total Saldo</h3>
+                  <p>R$1.0000</p>
+                </div>  
+              <i class="fa-solid fa-money-bill"></i>
+          </div>
+
+        </div>
+
+        <div class="graficos">
+            <div class="grafico-content">
+                <h1>Categorias</h1>
+                <canvas id="myChart"></canvas> 
+            </div>
+            <div class="grafico-content">
+                <h1>Grafico 2</h1>
+                <canvas id="myChart2"></canvas>
+            </div>
+        </div>
+        
+    </div> <!--Content-->
+
+</section><!--main-->
+
+<script src="https://kit.fontawesome.com/684bc6555c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="index.js"></script>
+    
+</body>
+</html>
